@@ -192,6 +192,7 @@ export function CalculatorUI(): React.ReactElement {
 
               <select
                 className="select select-bordered"
+                value={state.augment}
                 onChange={(e) =>
                   setState({ ...state, augment: parseInt(e.target.value, 10) })
                 }
