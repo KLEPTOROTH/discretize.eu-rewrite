@@ -19,6 +19,7 @@ export function CalculatorUI(): React.ReactElement {
     sunquaPeak: true,
     shatteredObservatory: true,
     nightmare: true,
+    kinfallCm: true,
     t4s: true,
     recs: true,
     weekly: true,
