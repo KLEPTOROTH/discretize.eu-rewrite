@@ -55,6 +55,7 @@ const calculate = ({
   sunquaPeak,
   shatteredObservatory,
   nightmare,
+  kinfall,
   t4s,
   recs,
   weekly,
@@ -105,6 +106,13 @@ const calculate = ({
     pagesPerDay += 1;
   }
 
+  if (kinfall) {
+    relicsPerDay += 140 + 19 + augment * 5;
+    pristinesPerDay += 2;
+    matricesPerDay += 1;
+    pagesPerDay += 1;
+  }
+
   if (t4s) {
     relicsPerDay += 3 * 18.2 + 3 * augment * 5;
     pristinesPerDay += 12;
@@ -126,6 +134,10 @@ const calculate = ({
     }
 
     if (nightmare) {
+      relicsPerDay -= (3 * (19 + augment * 5)) / 15;
+    }
+    
+    if (kinfall) {
       relicsPerDay -= (3 * (19 + augment * 5)) / 15;
     }
   }
