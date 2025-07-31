@@ -121,6 +121,11 @@ export function CalculatorUI(): React.ReactElement {
       stateName: "nightmare",
     },
     {
+      label: "Kinfall CM",
+      value: state.kinfall,
+      stateName: "kinfall",
+    },
+    {
       label: "Daily T4 Fractals",
       value: state.t4s,
       stateName: "t4s",
